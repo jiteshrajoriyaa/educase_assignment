@@ -63,7 +63,7 @@ app.get('/listSchools', (req, res) => {
   });
 
   app.listen(3000, '0.0.0.0', () => {
-    console.log(`server listening on port ${process.env.PORT || 3000}`);
+    console.log(`server listening on port 3000`);
 });
 
 

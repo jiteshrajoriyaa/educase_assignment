@@ -1,8 +1,10 @@
 const db = require('./db')
 const express = require('express');
 const getDistance = require('./utils');
+const cors = require('cors');
 const app = express();
 app.use(express.json());
+app.use(cors());
 require('dotenv').config()
 
 function init() {
@@ -65,10 +67,3 @@ app.get('/listSchools', (req, res) => {
   app.listen(process.env.PORT || 3000, '0.0.0.0', () => {
     console.log(`server listening on port 3000`);
 });
-
-
-
-
-
-
-

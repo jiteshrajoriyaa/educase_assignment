@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "2ba654b5-4689-4115-baea-a6ed9c28ae68",
+		"name": "School API",
+		"description": "The collection is meant to test all api which are deployed on render.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31834083",
+		"_collection_link": "https://www.postman.com/jiteshrajoriya/jitesh-rajoriya-public-workspace/collection/4ap6d20/school-api?action=share&source=collection_link&creator=31834083"
+	},
+	"item": [
+		{
+			"name": "listSchools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://educase-assignment-8evr.onrender.com/listSchools?lat=28.704060&lng=77.102493",
+					"protocol": "https",
+					"host": [
+						"educase-assignment-8evr",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"listSchools"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "28.704060"
+						},
+						{
+							"key": "lng",
+							"value": "77.102493"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "listSchools",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://educase-assignment-8evr.onrender.com/listSchools?lat=28.704060&lng=77.102493",
+							"protocol": "https",
+							"host": [
+								"educase-assignment-8evr",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"listSchools"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "28.704060"
+								},
+								{
+									"key": "lng",
+									"value": "77.102493"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "addSchool",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Delhi Public School\",\r\n  \"address\": \"Sikar\",\r\n  \"latitude\": 27.6131,\r\n  \"longitude\": 75.1399\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://educase-assignment-8evr.onrender.com/addSchool",
+					"protocol": "https",
+					"host": [
+						"educase-assignment-8evr",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"addSchool"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addSchool",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
